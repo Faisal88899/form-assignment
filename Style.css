@@ -1,0 +1,124 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    min-height: 100vh;
+    padding: 0 20px;
+    font-family: "Oswald", sans-serif;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+}
+.container{
+    position: relative;
+    max-width:750px;
+    width: 100%;
+    background-color: aqua;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 50px;
+}
+.container header{
+    font-size: 2rem;
+    color: darkorchid;
+    font-weight: 500;
+     
+}
+.form .input-box{
+
+    width: 100%;
+    margin: 10px;
+
+}
+ .input-box label{
+    color: black;
+}
+.form :where(.input-box input, .select-box){
+    position: relative;
+    height: 50px;
+    width: 90%;
+    outline: 1.5rem;
+    color: darkcyan;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1.5px solid #3d3942;
+    padding: 0 15px;
+}
+
+.column{
+    display: flex;
+    column-gap:20px ;
+}
+
+.form .gender-box{
+    margin-top:20px;
+    cursor: pointer;
+    /* display: flex;
+    row-gap: 15px; */
+}
+.gender-box h3{
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    font-weight: 400px ;
+    /* flex-wrap: wrap; */
+}
+ .form :where( .gender-option, .gender){
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    margin-left: 16px;
+ }
+ .from .gender{
+column-gap: 15px;
+cursor: pointer;
+ }
+ .form :where(.gender input , .gender label){
+    cursor: pointer;
+ }
+ .address :where(.input-box , .select-box){
+margin-top:20px ;
+ }
+ .select-box select{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #707070;
+    font-size: 1rem;
+ }
+  button{
+    height: 60px;
+    width: 500px;
+    color: #fff;
+    font-size: 1.5rem;
+    border: none;
+    background-color: rgb(20, 121, 189);
+    border-radius: 6px;
+    font-weight: 400;
+    /* text-align: center;
+    justify-content: center;
+    align-items: center; */
+    margin: auto;
+    cursor: pointer;
+ }
+  
+ .form button:hover{
+    background-color: rgb(76, 0, 255);
+ }
+ @media screen and(max-width:500px){
+    .form .column{
+        flex-wrap: wrap;
+    }
+ }
+
+ @media screen and (max-width:500px){
+     .form:where(.gender-option, .gender){
+        row-gap: 15px;
+        flex-wrap: wrap;
+    }
+ }
+    
+ 
